@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion, } from 'framer-motion';
 
 /**
  * SmartExam Quiz Management Dashboard
@@ -58,8 +58,8 @@ const Sidebar = () => (
                     key={item.label}
                     href="#"
                     className={`flex items-center gap-3 px-4 py-3 rounded-md transition-all duration-200 group ${item.active
-                            ? 'bg-slate-900 text-indigo-400 border-r-4 border-indigo-500'
-                            : 'hover:bg-slate-900 hover:text-slate-200'
+                        ? 'bg-slate-900 text-indigo-400 border-r-4 border-indigo-500'
+                        : 'hover:bg-slate-900 hover:text-slate-200'
                         }`}
                 >
                     <span className={`material-symbols-outlined ${item.active ? 'fill-1' : ''}`}>{item.icon}</span>
@@ -205,8 +205,8 @@ export default function QuizManagement() {
                                             <td className="px-6 py-4 text-right font-semibold text-slate-900 tabular-nums">{quiz.submissions}</td>
                                             <td className="px-6 py-4 text-center">
                                                 <span className={`inline-flex items-center px-2.5 py-1 rounded-md text-[10px] font-black uppercase tracking-tighter ${quiz.status === 'Active' ? 'bg-emerald-100 text-emerald-700' :
-                                                        quiz.status === 'Draft' ? 'bg-slate-100 text-slate-600' :
-                                                            'bg-indigo-100 text-indigo-700'
+                                                    quiz.status === 'Draft' ? 'bg-slate-100 text-slate-600' :
+                                                        'bg-indigo-100 text-indigo-700'
                                                     }`}>
                                                     {quiz.status}
                                                 </span>

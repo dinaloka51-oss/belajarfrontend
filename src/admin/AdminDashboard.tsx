@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion, } from 'framer-motion';
 
 /**
  * SmartExam Admin Dashboard
@@ -51,8 +51,8 @@ const SideNavBar = () => {
                         key={item.name}
                         onClick={() => setActiveTab(item.name)}
                         className={`flex items-center gap-3 px-4 py-3 transition-all duration-200 ease-in-out border-r-2 ${activeTab === item.name
-                                ? 'text-indigo-900 dark:text-indigo-300 bg-white dark:bg-slate-900 border-indigo-900 dark:border-indigo-400'
-                                : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-900 dark:hover:text-indigo-200 border-transparent'
+                            ? 'text-indigo-900 dark:text-indigo-300 bg-white dark:bg-slate-900 border-indigo-900 dark:border-indigo-400'
+                            : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-indigo-900 dark:hover:text-indigo-200 border-transparent'
                             }`}
                     >
                         <span className="material-symbols-outlined">{item.icon}</span>

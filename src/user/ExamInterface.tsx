@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion, } from 'framer-motion';
 
 /**
  * SMARTEXAM - EXAM INTERFACE
@@ -154,8 +154,8 @@ export default function ExamInterface() {
                                             key={letter}
                                             onClick={() => setSelectedOption(letter)}
                                             className={`w-full group flex items-start gap-5 p-6 rounded-2xl border-2 transition-all text-left ${isSelected
-                                                    ? 'border-indigo-600 bg-indigo-50 dark:bg-indigo-900/20'
-                                                    : 'border-slate-100 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700'
+                                                ? 'border-indigo-600 bg-indigo-50 dark:bg-indigo-900/20'
+                                                : 'border-slate-100 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700'
                                                 }`}
                                         >
                                             <span className={`flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center font-black transition-colors ${isSelected ? 'bg-indigo-600 text-white' : 'bg-slate-100 text-slate-500 dark:bg-slate-800'

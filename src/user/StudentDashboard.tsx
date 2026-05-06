@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion, } from 'framer-motion';
 
 /**
  * SMARTEXAM ACADEMIC PORTAL
@@ -69,7 +69,7 @@ const ScoreItem = ({ title, date, score, icon }: { title: string; date: string; 
 // --- Main Page Component ---
 
 export default function StudentDashboard() {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [,] = useState(false);
 
     return (
         <div className="min-h-screen bg-[#F7F9FB] dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans selection:bg-indigo-100 selection:text-indigo-900">
