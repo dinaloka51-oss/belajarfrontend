@@ -7,6 +7,13 @@ import "./index.css";
 import App from "./App.tsx";
 import SignIn from "./auth/signin.tsx";
 import SignUp from "./auth/signup.tsx";
+import AdminDashboard from "./admin/AdminDashboard.tsx";
+import QuizManagement from "./admin/QuizManagement.tsx";
+import ExamInterface from "./user/ExamInterface.tsx";
+import ExamResults from "./user/ExamResults.tsx";
+import SmartExamDashboard from "./user/SmartExamDashboard.tsx";
+import StudentDashboard from "./user/StudentDashboard.tsx";
+
 
 // 1. Buat konfigurasi router
 const router = createBrowserRouter([
@@ -21,6 +28,30 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUp />, // Halaman Sign Up
+  },
+  {
+    path: "/admin/adminDashboard",
+    element: <AdminDashboard />
+  },
+  {
+    path: "/admin/QuizManagement",
+    element: <QuizManagement />
+  },
+  {
+    path: "/user/ExamInterface",
+    element: <ExamInterface />
+  },
+  {
+    path: "/user/ExamResult",
+    element: <ExamResults />
+  },
+  {
+    path: "/user/SmartExamDashboard",
+    element: <SmartExamDashboard />
+  },
+  {
+    path: "/user/StudentDashboard",
+    element: <StudentDashboard />
   },
 ]);
 
